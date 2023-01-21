@@ -7,8 +7,7 @@
 }
 
 body {
-    background: rgb(51,0,67);
-    background: linear-gradient(90deg, rgba(51,0,67,1) 0%, rgba(152,84,203,1) 25%, rgba(221,199,248,1) 80%);
+    background: rgb(253, 253, 253);
 }
 
 .container {
@@ -19,55 +18,72 @@ body {
     align-content: center;
     background-color: #fff;
     text-align: center;
+    border-radius: 2rem;
+    filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 0.25));
+    
 }
 
 .container .container-header {
     
 }
 
-.container .container-header a{
+.container .container-header a {
     text-decoration: none;
     color: #000;
 }
 
-.container .container-header i{
+.container .container-header i {
     display: flex;
     justify-content: end;
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin: 2rem;
+    transition: all 0.4s;
+    cursor: pointer;
 }
 
-.container .container-header img{
+.container .container-header i:hover {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.02);
+}
+
+.container .container-header img {
     width: 40%;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-.container .container-header h1{
+.container .container-header h1 {
     font-size: 1.7rem;
 }
 
-.container .container-header h2{
+.container .container-header h2 {
     font-size: 1rem;
     font-weight: 400;
 }
 
-.container .container-header .social-media{
+.container .container-header .social-media {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 1rem;
 }
 
-.container .container-header .social-media i{
+.container .container-header .social-media i {
     font-size: 1.8rem;
+    transition: transform 0.5s;
 }
 
-.container .buttons-group{
+.container .container-header .social-media i:hover{
+    transform: translateY(-0.5rem);
+}
+
+.container .buttons-group {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
-.container .buttons-group a{
+.container .buttons-group a {
+    width: 50%;
     height: 2rem;
     padding-top: 0.5rem;
     border-radius: 0.8rem;
@@ -75,6 +91,11 @@ body {
     color: #fff;
     background-color: #330043;
     margin: 1rem;
+    transition: opacity 0.6s;
+}
+
+.container .buttons-group a:hover {
+    opacity: 70%;
 }
 
 .container .container-footer {
@@ -85,4 +106,8 @@ body {
     height: 4rem;
     padding-top: 2rem;
     text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+
 }
