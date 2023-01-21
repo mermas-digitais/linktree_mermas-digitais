@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .container-header {
+    
+}
+
+.container .container-header img{
+    width: 20%;
+}
