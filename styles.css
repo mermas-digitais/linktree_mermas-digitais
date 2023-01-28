@@ -43,6 +43,7 @@ a {
 	cursor: pointer;
 	outline: inherit;
     transition: all 0.4s;
+    font-size: 1.5rem;
 }
 
 /*.container .container-header .menubar button:hover {
