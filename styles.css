@@ -45,20 +45,36 @@ a {
     transition: all 0.4s;
 }
 
-.container .container-header .menubar button:hover {
+/*.container .container-header .menubar button:hover {
     -webkit-transform: scale(1.0);
     transform: scale(1.3);
-}
+}*/
 
 .container .container-header .menubar a {
     font-size: 1.3rem;
 }
 
-.container .container-header .menubar .copy-text input{
+.container .container-header .menubar .copy-text input {
     border: none;
     outline: none;
     color: #fff;
-    
+    font-size: 0.2rem;
+}
+
+.container .container-header .menubar .copy-text button:before {
+    content: "Link copiado para a área de transferência!";
+    position: absolute;
+    right: 1rem;
+    left: 0;
+    padding: 0rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    display: none;
+    transition: all 5s;
+}
+
+.container .container-header .menubar .copy-text.active button:before {
+    display: block;
 }
 
 .container .container-header img {
